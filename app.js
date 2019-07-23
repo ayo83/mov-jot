@@ -74,7 +74,7 @@ app.use((req, res, next) =>{
 });
 
 //index route
-app.get('/dashboard', ensureAuthenticated, (req, res) => {
+app.get('/', ensureAuthenticated, (req, res) => {
   res.render('Home');
 });
 
