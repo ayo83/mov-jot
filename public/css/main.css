@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('../img/bg1.jpg');
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color:rgb(46, 45, 45);
+  opacity: 0.9;
+}
+
+.movTitle{
+  text-transform: uppercase;
+}
+
+.userIcon {
+  width: 30px;
+  height: 30px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.login {
+  margin: auto 0;
+  padding-top: 15vh;
+}
+
+.register {
+  margin: auto 0; 
+}
+
+/* .login-body{
+  background-color: rgb(230, 229, 227);
+  background-blend-mode: multiply;
+  opacity: 0.8;
+} */
+
+.btn{
+  width: 100%;
+  margin: auto;
+}
+.logo{
+  width: 160px;
+  margin: auto;
+}
+
+.logodash{
+  width: 100px;
+  height: 80;
+  margin: auto;
+  padding-top: none;
+}
+
+.btn {
+  border: none;
+  border-radius: 10px;
+}
+
+.story {
+  font-weight: bolder;
+}
+
+.story-build {
+  /* background-color: rgb(218, 218, 218); */
+  max-width:100%;
+  margin: 0;
+  /* border-radius: 5px; */
+  padding-bottom: 1px;
+  /* padding-top: 7px; */
+  color: rgb(85, 8, 8);
+  /* border: 2px solid rgb(0, 0, 0); */
+}
+
+.ori{
+  font-family: 'Russo One', sans-serif;
+}
+
+/* .addForm{
+  padding: 4px 4px;
+} */
+
+select option {
+  background-color: none;
+  color: black;
+}

@@ -1,0 +1,96 @@
+{{#each ideas}}
+<section class="card card-body mb-3 mx-auto shadow-sm p-5 movform">
+  <h2 class="text-center ori movTitle">{{title}}</h2>
+  <div class="row images mt-3">
+    <div class="col-md-3">
+      <img src="/img/post1.jpg" height="150"
+        width="200" class="img-thumbnail">
+    </div>
+    <div class="col-md-3">
+      <img src="/img/post2.jpg" height="150"
+        width="200" class="img-thumbnail">
+    </div>
+    <div class="col-md-3">
+      <img src="/img/post3.jpg" height="150"
+        width="200" class="img-thumbnail">
+    </div>
+    <div class="col-md-3">
+      <img src="/img/post4.jpg" height="150"
+        width="200" class="img-thumbnail">
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <div class="story-build mb-2 mx-auto">
+        <h5 class="text-center ori">MOVIE DURATION</h6>
+      </div>
+      <h5 class="text-center story">{{duration}} Minutes</h5>
+    </div>
+    <div class="col-md-6">
+      <div class="story-build mb-2 mx-auto">
+        <h5 class="text-center ori">MOVIE TYPE</h5>
+      </div>
+      <h5 class="text-center story">{{movieType}}</h5>
+    </div>
+  </div>
+
+  <div class="chara-building mt-5 mx-auto">
+    <div class="story-build">
+      <h5 class="text-center ori">CHARACTER BUILDING</h5>
+    </div>
+    <h6 class="story">{{{chaBuild}}}</h6>
+  </div>
+
+  <div class="story-building mt-5">
+    <div class="story-build mb-2">
+      <h5 class="text-center ori">STORY STRUCTURE</h5>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <h6 class="text-center story">{{stoStructureOne}}</h6>
+      </div>
+      <div class="col-md-4">
+        <h6 class="text-center story">{{stoStructureTwo}}</h6>
+      </div>
+      <div class="col-md-4">
+        <h6 class="text-center story">{{stoStructureThree}}</h6>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <h6 class="text-center story">{{stoStructureFour}}</h6>
+      </div>
+      <div class="col-md-4">
+        <h6 class="text-center story">{{stoStructureFive}}</h6>
+      </div>
+      <div class="col-md-4">
+        <h6 class="text-center story">{{stoStructureSix}}</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="story-line mt-5">
+    <div class="story-build mb-2">
+      <h5 class="text-center ori">STORY BUILDING</h5>
+    </div>
+    <h6 class="story">{{{details}}}</h6>
+  </div>
+
+
+
+
+
+  <a href="/ideas/edit/{{id}}" class="btn btn-dark bg-block">Edit Movie</a>
+  <form action="/ideas/{{id}}?_method=DELETE" method="post">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" class="btn btn-danger btn-block mt-2" value="Delete">
+
+  </form>
+</section>
+{{else}}
+<div class="container mx-auto">
+  <h3 class="text-white mt-4 mb-4">No movies Idea listed, kindly add a movie Idea</h3>
+  <a href="/ideas/add" class="btn btn-dark btn-lg bg-success mb-3">Add Movie</a>
+</div>
+{{/each}}

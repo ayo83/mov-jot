@@ -1,0 +1,68 @@
+<div class="card card-body  shadow-sm mx-auto pt-4 addForm pb-4 pl-3 pr-3 mb-4 rounded movform">
+  <img src="/img/logo.png" alt="" width="155" height="110" class="mx-auto mb-5 mt-3">
+  <form action="/ideas" method="POST">
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <div class="form-group">
+          <label for="title">Movie Title</label>
+          <input type="text" class="form-control text-uppercase shadow-sm p-4" name="title">
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="movieType">Movie Type</label>
+        <div class="input-group mb-3">
+          <select class="custom-select shadow-sm p-3 text-dark" id="inputGroupSelect01" name="movieType">
+            <option selected>Choose...</option>
+            <option value="Documentary Film">Documentary</option>
+            <option value="Short Film">Short</option>
+            <option value="Feature Film">Feature</option>
+            <option value="Film Series">Series</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="stoStructure">Story Structure</label>
+      <div class="row">
+        <div class="col-md-4">
+          <input type="text" class="form-control  shadow-sm p-3 mb-2" name="stoStructureOne" placeholder="Act One">
+        </div>
+        <div class="col-md-4">
+          <input type="text" class="form-control  shadow-sm p-3 mb-2" name="stoStructureTwo" placeholder="Act Two">
+        </div>
+        <div class="col-md-4">
+          <input type="text" class="form-control  shadow-sm p-3 mb-2" name="stoStructureThree" placeholder="Act Three">
+        </div>
+        <div class="col-md-4">
+          <input type="text" class="form-control  shadow-sm p-3 mb-2" name="stoStructureFour" placeholder="Act Four">
+        </div>
+        <div class="col-md-4">
+          <input type="text" class="form-control  shadow-sm p-3 mb-2" name="stoStructureFive" placeholder="Act Five">
+        </div>
+        <div class="col-md-4">
+          <input type="text" class="form-control  shadow-sm p-3 mb-2" name="stoStructureSix" placeholder="Act Six">
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="chaBuild">Character Building</label>
+      <textarea name="chaBuild" class="form-control shadow-sm p-3 rounded"></textarea>
+    </div>
+    <div class="form-group">
+      <div class="row">
+        <div class="col-md-6">
+          <label for="duration"> Movie Runtime</label>
+          <input type="number" class="form-control shadow-sm p-3" name="duration">
+        </div>
+        <div class="col-md-6">
+          COMING SOON
+        </div>
+      </div>
+      <div class="form-group mt-2">
+        <label for="details">Story Building</label>
+        <textarea name="details" class="form-control shadow-sm p-3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-danger shadow-sm p-3 btn-block mt-2">Add Movie Idea</button>
+  </form>
+</div>
+</div>
