@@ -75,12 +75,12 @@ app.use((req, res, next) =>{
 
 //index route
 app.get('/', ensureAuthenticated, (req, res) => {
-  res.render('/');
+  res.render('home');
 });
 
 //About Route
 app.get('/about', (req, res) => {
-  res.render('/about');
+  res.render('about');
 });
 
 
